@@ -1,0 +1,42 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+    <bean class="org.Anotation.Participant" id="p1">
+        <property name="name" value="Shakti"/>
+        <property name="address" value="mumbai"/>
+    </bean>
+    <bean class="org.Anotation.Participant" id="p2">
+        <property name="name" value="Dharmesh"/>
+        <property name="address" value="ahemadabad"/>
+    </bean>
+    <bean class="org.Anotation.Participant" id="p3">
+        <property name="name" value="sujan"/>
+        <property name="address" value="nanded"/>
+    </bean>
+    <bean class="org.Anotation.Participant" id="p4">
+        <property name="name" value="punit"/>
+        <property name="address" value="indore"/>
+    </bean>
+
+    <bean class="org.Anotation.DID" id="did">
+        <property name="seasonName" value="Season2"></property>
+        <property name="brandPartnars" >
+            <list>
+                <value>Borvita</value>
+                <value>Horlick</value>
+                <value>Play</value>
+            </list>
+        </property>
+        <property name="participants">
+            <map>
+                <entry key-ref="p1" value="teamRemo"></entry>
+                <entry key-ref="p2" value="teamRemo"></entry>
+            </map>
+        </property>
+    </bean>
+</beans>

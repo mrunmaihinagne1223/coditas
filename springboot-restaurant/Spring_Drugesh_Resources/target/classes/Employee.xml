@@ -1,0 +1,40 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+    <bean class="org.collection.Employee" name="employee1" >
+        <property name="name" value="Mrunmai"/>
+        <property name="phones">
+            <list>
+            <value>765533</value>
+            <value>7633</value>
+            <value>76533</value>
+            <value>2323</value>
+                <null/>
+            </list>
+        </property>
+        <property name="addresses">
+            <set>
+                <value>765533</value>
+                <value>7633</value>
+                <value>76533</value>
+                <value>2323</value>
+            </set>
+        </property>
+        <property name="courses">
+            <map>
+                <entry key="java" value="2months"/>
+                <entry key="spring" value="3months"/>
+                <entry key="JDBC" value="4months"/>
+
+            </map>
+        </property>
+    </bean>
+
+
+
+</beans>
